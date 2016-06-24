@@ -21,10 +21,7 @@ module.exports = {
             loader: 'style-loader!css-loader!sass-loader'
         }, {
             test: /\.css$/,
-            loaders: [
-                'style?sourceMap',
-                'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
-            ]
+            loader: 'style!css?sourceMap&localIdentName=[local]___[hash:base64:5]!resolve-url!sass?outputStyle=expanded&sourceMap'
         },{
             test: /\.(png|jpg)$/,
             loader: 'url-loader?limit=25000'

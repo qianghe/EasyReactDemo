@@ -1,0 +1,41 @@
+$bgColor : orange;
+$buttonColor: red;
+$buttonHoverColor: green;
+$fontColor: #fff;
+
+.showCounter{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  text-align: center;
+  background-color: $bgColor;
+
+  h1{
+    color : $fontColor;
+    letter-spacing: 0.1rem;
+  }
+
+  button{
+    width: 80%;
+    height: 30px;
+
+    padding: 10px 5px;
+    background-color: red;
+    font-size: 15px;
+    line-height: 15px;
+    color: $fontColor;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #eee;
+    border: none;
+
+    &:focus{
+      outline: none;
+    }
+
+    &:hover{
+      background-color: $buttonHoverColor;
+    }
+  }
+}
